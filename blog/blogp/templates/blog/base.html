@@ -53,8 +53,18 @@
  <main role ='main' class="container">
    <div class="row"> 
     <div class="col-md-8">
+    {% if messaged %}
+    {% for message in messages %}
+    <div class="alear aleart-{{ message.tags }} "> 
+    {{ message }}
+    </div>
+    {% endfor %}
+    {% endif %}
       {% block content %} {% endblock%}
-    </div>     
+    </div>  
+
+
+
       <!-- sidecontent -->
       <!-- <div class="float-right"> -->
         <div class="col-md-4">
