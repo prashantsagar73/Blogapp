@@ -11,25 +11,6 @@
  <title>{% block title %} {% endblock %} </title>  
  </head>
   <body>
-    
-     {% comment %} <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Blog</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
- <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href=" {% url 'Blog_home' %} ">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'Blog_about' %}">About</a>
-        </li>
-        </div>
-
-  </div>
-</nav> {% endcomment %}
 
 <header class="p-3 bg-dark text-white">
     <div class="container">
@@ -48,6 +29,7 @@
         </form>
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
           {% if user.is_authenticated %}
+            <li><a href="{% url 'post-create' %}" class="nav-link px-2 text-white">New Post</a></li>
             <li><a href="{% url 'logout' %}" class="nav-link px-2 text-white">Logout</a></li>
             <li><a href="{% url 'profile' %}" class="nav-link px-2 text-white">Profile</a></li>
           {% else %}
