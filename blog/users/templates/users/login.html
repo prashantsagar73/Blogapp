@@ -10,11 +10,16 @@
             <legend class="border-bottom mb-4"> Log In</legend>
             {{form|crispy }}
         </fieldset>
-        <div class="form-group">
+        <hr>
+        <div class="form-group py-3">
             <button class="btn btn-outline-info" type="submit">Login</button>
+            <small class="text-muted my-2">
+                <a href="{% url 'password_reset' %}">Forget Password? </a>
+            </small>
+
         </div>
     </form>
-    <div class="border-top pt-3">
+    <div class="border-top py-3">
         <small class="text-muted">
             Need an Account? <a class="ml-2" href="{% url 'register' %}">Sign Up</a>
         </small>
