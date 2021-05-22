@@ -7,18 +7,22 @@
                             
             <h2 class="featurette-heading"> {{ object.title }}<span class="text-muted"> </span></h2>
             <p class="lead">{{ object.content }}</p>
+            <div class="fb-like" data-href="http://127.0.0.1:8000/post/{{post_id}}" data-width="" data-layout="standard" data-action="like" data-size="large" data-share="true"></div>
           </div>
           <div class="col-md-5">
             <img class="rounded-circle" src="{{ post.author.profile.image.url }}" alt="Generic placeholder image" width="140" height="140">
             <strong class="d-inline-block mb-2 my-4 text-primary" href="{% url 'user-posts' object.author.username %} ">{{ object.author }}</strong>
 
           </div>
+
       </div>
       <div>
+        <div class="fb-comments" data-href="http://127.0.0.1:8000/post/{{post.post_id}}" data-width="" data-numposts="2"></div>
         {% if object.author == user%}
        
         <a href="{% url 'post-update' object.id %}" class="btn btn-primary btn-lg active my-3" role="button" aria-pressed="true">Update</a>
         <a href="{% url 'post-delete' object.id %}" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Delete</a>  
       {% endif %}
   </div>
+
 {% endblock content%}
