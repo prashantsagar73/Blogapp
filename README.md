@@ -1,6 +1,6 @@
 
 
-# **Blogapp**
+# **BLOGEX**
 
 _A blog website where user can post their post their blog and share with world.
 
@@ -8,7 +8,7 @@ _A blog website where user can post their post their blog and share with world.
 
 ## Project Status
 Currently the project is in development stage and we are trying our best to complete it.
-
+but live on : https://blogexx.herokuapp.com/
 <br>
 
 ## Setup
