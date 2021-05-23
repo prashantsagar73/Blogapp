@@ -7,8 +7,9 @@ _A blog website where user can post their post their blog and share with world.
 <br>
 
 ## Project Status
-Currently the project is in development stage and we are trying our best to complete it.
-but live on : https://blogexx.herokuapp.com/
+Currently the project is in development stage and we are trying our best to complete it.<br>
+
+Have a look on : https://blogexx.herokuapp.com/
 <br>
 
 ## Setup
