@@ -20,7 +20,8 @@ from django.conf import settings
 from django.conf.urls.static import static
 from users import views as user_views
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin/', include('admin_honeypot.urls', namespace='admin_honeypot')),
+    path('blogex/', admin.site.urls),
     path('register/', user_views.register,name='register'),
     path('profile/', user_views.profile,name='profile'),
     path('login/', auth_views.LoginView.as_view(template_name='users/login.html'), name='login'),

@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'blogp.apps.BlogpConfig',
     'users.apps.UsersConfig',
     'crispy_forms',
+    'admin_honeypot',
 ]
 
 MIDDLEWARE = [
