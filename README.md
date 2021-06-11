@@ -76,5 +76,4 @@ TODOS
 - Search for post any pages
 - Create following system
 - Read later post
-- Like post
 - ...
